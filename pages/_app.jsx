@@ -22,9 +22,11 @@ function MyApp({ Component, pageProps }) {
             </div>
           </Link>
         </div>
-        <Link href='/changelog'>
-          <a className='ml-auto text-xl'>Changelog</a>
-        </Link>
+        <div className='ml-auto text-xl text-slate-800 font-medium'>
+          <Link href='/changelog'>
+            <a>Changelog</a>
+          </Link>
+        </div>
       </nav>
       <div className='bg-gradient-to-br from-zinc-800 to-zinc-900 h-full flex flex-col flex-auto'>
         <Component {...pageProps} />

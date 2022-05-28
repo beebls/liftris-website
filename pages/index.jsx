@@ -36,11 +36,7 @@ export default function Home() {
                 <div className='flex flex-col md:flex-row'>
                   <button
                     className='w-44 bg-gradient-to-tr from-sky-700 to-cyan-500 from- rounded-full border-zinc-900 shadow-md self-center'
-                    onClick={() =>
-                      window.open(
-                        "https://apps.apple.com/us/app/liftris/id1625626338"
-                      )
-                    }>
+                    onClick={() => window.open("/ios-download")}>
                     <Icon
                       file={appstore}
                       scale={10}
@@ -53,11 +49,7 @@ export default function Home() {
                   <div className='p-5' />
                   <button
                     className='w-44 bg-gradient-to-tl from-emerald-700 to-lime-500 from- rounded-full border-zinc-900 shadow-md self-center'
-                    onClick={() =>
-                      window.open(
-                        "https://play.google.com/store/apps/details?id=com.beebles.liftlog"
-                      )
-                    }>
+                    onClick={() => window.open("/android-download")}>
                     <Icon
                       file={googleplay}
                       scale={10}
