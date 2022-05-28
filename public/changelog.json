@@ -1,0 +1,87 @@
+[
+  {
+    "version": "1.2.0",
+    "name": "Release 2",
+    "date": "May 28",
+    "data": {
+      "features": [
+        "View your past exercise data! Clicking on an exercise in the “Your Exercises” category will bring up a new menu that has multiple screens.",
+        [
+          "Overview: View a small amount of quick stats about that exercise, like your total sets/reps/weights done for that exercise.",
+          "Past Workouts: A detailed breakdown showing each set of each workout containing the exercise.",
+          "Graphs: Graphs showing your weights and reps for that exercise have changed over time."
+        ],
+        "Custom Themes. You can now choose the “Custom” option in the theme settings, which gives you the ability to customize each colour in the app.",
+        [
+          "Share your themes with others using the built-in “Share” and “Import” buttons"
+        ],
+        "Settings toggle to choose between LBS and KG for your weight unit."
+      ],
+      "bugfixes": [
+        "Fixed crash when attempting to end a workout with a superset in it."
+      ],
+      "misc": [
+        "You can now delete entries in your exercise history if you misreported or just don't feel proud of one set."
+      ]
+    }
+  },
+  {
+    "version": "1.1.4",
+    "name": "Release 1 - Patch 4",
+    "date": "May 27",
+    "data": {
+      "misc": ["Renamed to Liftris"]
+    }
+  },
+  {
+    "version": "1.1.3",
+    "name": "Release 1 - Patch 3",
+    "date": "May 25",
+    "data": {
+      "bugfixes": [
+        "Fixed issue where history entries were added oldest-first instead of newest-first,",
+        "Reformatted how exercise history is organized, this will make it much easier in the future to chart and organize."
+      ]
+    }
+  },
+  {
+    "version": "1.1.2",
+    "name": "Release 1 - Patch 2",
+    "date": "May 25",
+    "data": {
+      "features": [
+        "Gave all modals in the app pop-up animation, and the ability to swipe up or down to close them in addition to clicking on the background.",
+        ["Doesn't include confirmation modals"]
+      ],
+      "bugfixes": [
+        "Fixed crash when attempting to add to superset at the end of a workout",
+        "Fixed padding bug with StatDiffChips on the rep field"
+      ]
+    }
+  },
+  {
+    "version": "1.1.1",
+    "name": "Release 1 - Patch 1",
+    "date": "May 25",
+    "data": {
+      "bugfixes": [
+        "Fixed crash when attempting to add to superset at the end of a workout",
+        "Fixed padding bug with StatDiffChips on the rep field"
+      ]
+    }
+  },
+  {
+    "version": "1.1.0",
+    "name": "Release 1",
+    "date": "May 24",
+    "data": {
+      "preface": "We are live! (Well not really because this release was superseded before it ever got approved but still)",
+      "features": [
+        "Added creating, editing, and deleting routines",
+        "Added filling out, submitting, and viewing workouts",
+        "Added creating custom exercises",
+        "Given that this is the first release, it's somewhat barebones, but all of the internal code for many of the more advanced features is already in, so it should be relatively simple to add them later."
+      ]
+    }
+  }
+]

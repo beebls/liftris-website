@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  height: -webkit-fill-available;
+}
+
+body {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: #1c1c1c;
+  font-family: "Montserrat", sans-serif;
+}
+
+#__next {
+  height: 100%;
+  overflow-y: auto;
+}
