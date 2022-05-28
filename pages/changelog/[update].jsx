@@ -28,7 +28,7 @@ export default function Changelog() {
             </h1>
             <div>
               <h2 className='text-center text-3xl md:text-5xl font-bold pb-5 bg-clip-text bg-gradient-to-tl to-[#5ddeed] from-[#0e82c3] text-transparent'>
-                Changelog
+                {log.length ? "Changelog" : "Error - Invalid Release ID"}
               </h2>
               {log.map((e, i) => (
                 <article key={`changelog_${e.version}`}>

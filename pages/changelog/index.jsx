@@ -3,6 +3,7 @@ import Head from "next/head";
 import changelog from "../../public/changelog.json";
 
 import { CategoryMap } from "../../components/ChangelogMaps";
+import { useEffect } from "react";
 
 export default function Home() {
   const updateNameStyle = "text-3xl font-semibold";
