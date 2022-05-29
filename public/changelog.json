@@ -9,7 +9,7 @@
         "Fixed count weight twice setting applying to all exercises instead of being exercise specific."
       ],
       "misc": [
-        "Moved the “Delete Exercise” button from the exercise view page to within an exercise’s settings."
+        "Moved the “Delete Exercise” button from the exercise view page to within an exercise's settings."
       ]
     }
   },
