@@ -1,5 +1,19 @@
 [
   {
+    "version": "1.2.2",
+    "name": "Relase 2 - Patch 2",
+    "date": "May 29, 2022",
+    "data": {
+      "bugfixes": [
+        "Fixed crash when attempting to view settings of an exercise with no data.",
+        "Fixed count weight twice setting applying to all exercises instead of being exercise specific."
+      ],
+      "misc": [
+        "Moved the “Delete Exercise” button from the exercise view page to within an exercise’s settings."
+      ]
+    }
+  },
+  {
     "version": "1.2.1",
     "name": "Release 2 - Patch 1",
     "date": "May 29, 2022",
