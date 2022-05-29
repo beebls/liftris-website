@@ -1,8 +1,29 @@
 [
   {
+    "version": "1.2.1",
+    "name": "Release 2 - Patch 1",
+    "date": "May 29, 2022",
+    "data": {
+      "features": [
+        "New exercise settings menu located in the same place as exercise stats.",
+        "Option to count an exercise's weight twice in exercise stats (for exercises where the weight you log is only one arm/leg's worth)"
+      ],
+      "bugfixes": [
+        "Fixed crash when deleting the last set of a superset",
+        "Fixed incorrect end time being entered when ending a workout while you still have empty fields.",
+        "Fixed flickering on the note field of a set.",
+        "Fixed notes field of a workout getting cut off after the first line."
+      ],
+      "misc": [
+        "Weight/rep targets now display fractions instead of decimals.",
+        "Many small visual tweaks/size adjustments."
+      ]
+    }
+  },
+  {
     "version": "1.2.0",
     "name": "Release 2",
-    "date": "May 28",
+    "date": "May 28, 2022",
     "data": {
       "features": [
         "View your past exercise data! Clicking on an exercise in the “Your Exercises” category will bring up a new menu that has multiple screens.",
@@ -28,7 +49,7 @@
   {
     "version": "1.1.4",
     "name": "Release 1 - Patch 4",
-    "date": "May 27",
+    "date": "May 27, 2022",
     "data": {
       "misc": ["Renamed to Liftris"]
     }
@@ -36,7 +57,7 @@
   {
     "version": "1.1.3",
     "name": "Release 1 - Patch 3",
-    "date": "May 25",
+    "date": "May 25, 2022",
     "data": {
       "bugfixes": [
         "Fixed issue where history entries were added oldest-first instead of newest-first,",
@@ -47,7 +68,7 @@
   {
     "version": "1.1.2",
     "name": "Release 1 - Patch 2",
-    "date": "May 25",
+    "date": "May 25, 2022",
     "data": {
       "features": [
         "Gave all modals in the app pop-up animation, and the ability to swipe up or down to close them in addition to clicking on the background.",
@@ -62,7 +83,7 @@
   {
     "version": "1.1.1",
     "name": "Release 1 - Patch 1",
-    "date": "May 25",
+    "date": "May 25, 2022",
     "data": {
       "bugfixes": [
         "Fixed crash when attempting to add to superset at the end of a workout",
@@ -73,7 +94,7 @@
   {
     "version": "1.1.0",
     "name": "Release 1",
-    "date": "May 24",
+    "date": "May 24, 2022",
     "data": {
       "preface": "We are live! (Well not really because this release was superseded before it ever got approved but still)",
       "features": [
