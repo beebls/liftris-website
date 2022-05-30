@@ -1,9 +1,11 @@
 import Head from "next/head";
+import Link from "next/link";
 
 import changelog from "../../public/changelog.json";
 
 import { CategoryMap } from "../../components/ChangelogMaps";
-import { useEffect } from "react";
+
+const updatesWithPages = ["1.3.0"];
 
 export default function Home() {
   const updateNameStyle = "text-3xl font-semibold";
@@ -20,25 +22,38 @@ export default function Home() {
             <h1 className='text-center text-6xl md:text-8xl font-bold pb-5 bg-clip-text bg-gradient-to-tl to-[#5ddeed] from-[#0e82c3] text-transparent'>
               Changelog
             </h1>
-            {changelog.map((e) => (
-              <article key={`changelog_${e.version}`}>
-                <h2 className={updateNameStyle}>
-                  {e.version} - {e.name} - {e.date}
-                </h2>
-                <ul className={ulstyle}>
-                  {e.data.preface ? <li>{e.data.preface}</li> : null}
-                  {e.data.features ? (
-                    <CategoryMap name='Features' data={e.data.features} />
-                  ) : null}
-                  {e.data.bugfixes ? (
-                    <CategoryMap name='Bug Fixes' data={e.data.bugfixes} />
-                  ) : null}
-                  {e.data.misc ? (
-                    <CategoryMap name='Misc' data={e.data.misc} />
-                  ) : null}
-                </ul>
-              </article>
-            ))}
+            <h2 className='text-center text-2xl md:text-4xl font-medium pb-5 bg-clip-text bg-gradient-to-tl from-slate-500 to-slate-300 text-transparent'>
+              Click on underlined entries for additional info
+            </h2>
+            {changelog.map((e) => {
+              const isSpecial = updatesWithPages.find((f) => f === e.version);
+              console.log(isSpecial);
+
+              return (
+                <article key={`changelog_${e.version}`}>
+                  <Link href={`/changelog/${e.version}`}>
+                    <a
+                      className={`${updateNameStyle} ${
+                        isSpecial ? "underline" : ""
+                      }`}>
+                      {e.version} - {e.name} - {e.date}
+                    </a>
+                  </Link>
+                  <ul className={ulstyle}>
+                    {e.data.preface ? <li>{e.data.preface}</li> : null}
+                    {e.data.features ? (
+                      <CategoryMap name='Features' data={e.data.features} />
+                    ) : null}
+                    {e.data.bugfixes ? (
+                      <CategoryMap name='Bug Fixes' data={e.data.bugfixes} />
+                    ) : null}
+                    {e.data.misc ? (
+                      <CategoryMap name='Misc' data={e.data.misc} />
+                    ) : null}
+                  </ul>
+                </article>
+              );
+            })}
           </div>
         </div>
       </main>
