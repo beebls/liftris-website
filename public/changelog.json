@@ -3,56 +3,73 @@
     "version": "1.3.0",
     "name": "Release 3",
     "date": "Coming Soon",
-    "data": {
-      "features": [
-        "Set autofill! If you want to copy the data from your previous workout’s set, you can now simply slide the set to the right to reveal an autofill menu.",
+    "data": [
+      "Features",
+      [
+        "Set Autofill!",
         [
+          "If you want to copy the data from your previous workout's set, you can now simply slide the set to the right to reveal an autofill menu.",
           "This is customizable in settings for if you want the autofill to overwrite current data or not."
+        ],
+        "“Start Empty Workout” button on the homepage",
+        [
+          "Allows you to jump into a workout without having to create a preset."
+        ],
+        "“Turn Into Preset” option for past workouts.",
+        [
+          "Allows you to create a reusable preset from any of your past workouts instead of having to make all of your presets beforehand."
         ]
       ]
-    }
+    ]
   },
   {
     "version": "1.2.2",
     "name": "Release 2 - Patch 2",
     "date": "May 29, 2022",
-    "data": {
-      "bugfixes": [
+    "data": [
+      "Bug Fixes",
+      [
         "Fixed crash when attempting to view settings of an exercise with no data.",
         "Fixed count weight twice setting applying to all exercises instead of being exercise specific."
       ],
-      "misc": [
+      "Misc",
+      [
         "Moved the “Delete Exercise” button from the exercise view page to within an exercise's settings."
       ]
-    }
+    ]
   },
   {
     "version": "1.2.1",
     "name": "Release 2 - Patch 1",
     "date": "May 29, 2022",
-    "data": {
-      "features": [
+    "data": [
+      "Features",
+      [
         "New exercise settings menu located in the same place as exercise stats.",
-        "Option to count an exercise's weight twice in exercise stats (for exercises where the weight you log is only one arm/leg's worth)"
+        "Option to count an exercise's weight twice in exercise stats",
+        ["(for exercises where the weight you log is only one arm/leg's worth)"]
       ],
-      "bugfixes": [
+      "Bug Fixes",
+      [
         "Fixed crash when deleting the last set of a superset",
         "Fixed incorrect end time being entered when ending a workout while you still have empty fields.",
         "Fixed flickering on the note field of a set.",
         "Fixed notes field of a workout getting cut off after the first line."
       ],
-      "misc": [
+      "Misc",
+      [
         "Weight/rep targets now display fractions instead of decimals.",
         "Many small visual tweaks/size adjustments."
       ]
-    }
+    ]
   },
   {
     "version": "1.2.0",
     "name": "Release 2",
     "date": "May 28, 2022",
-    "data": {
-      "features": [
+    "data": [
+      "Features",
+      [
         "View your past exercise data! Clicking on an exercise in the “Your Exercises” category will bring up a new menu that has multiple screens.",
         [
           "Overview: View a small amount of quick stats about that exercise, like your total sets/reps/weights done for that exercise.",
@@ -65,71 +82,74 @@
         ],
         "Settings toggle to choose between LBS and KG for your weight unit."
       ],
-      "bugfixes": [
-        "Fixed crash when attempting to end a workout with a superset in it."
-      ],
-      "misc": [
+      "Bug Fixes",
+      ["Fixed crash when attempting to end a workout with a superset in it."],
+      "Misc",
+      [
         "You can now delete entries in your exercise history if you misreported or just don't feel proud of one set."
       ]
-    }
+    ]
   },
   {
     "version": "1.1.4",
     "name": "Release 1 - Patch 4",
     "date": "May 27, 2022",
-    "data": {
-      "misc": ["Renamed to Liftris"]
-    }
+    "data": ["Misc", ["Renamed to Liftris"]]
   },
   {
     "version": "1.1.3",
     "name": "Release 1 - Patch 3",
     "date": "May 25, 2022",
-    "data": {
-      "bugfixes": [
+    "data": [
+      "Bug Fixes",
+      [
         "Fixed issue where history entries were added oldest-first instead of newest-first,",
         "Reformatted how exercise history is organized, this will make it much easier in the future to chart and organize."
       ]
-    }
+    ]
   },
   {
     "version": "1.1.2",
     "name": "Release 1 - Patch 2",
     "date": "May 25, 2022",
-    "data": {
-      "features": [
+    "data": [
+      "Features",
+      [
         "Gave all modals in the app pop-up animation, and the ability to swipe up or down to close them in addition to clicking on the background.",
         ["Doesn't include confirmation modals"]
       ],
-      "bugfixes": [
+      "Bug Fixes",
+      [
         "Fixed crash when attempting to add to superset at the end of a workout",
         "Fixed padding bug with StatDiffChips on the rep field"
       ]
-    }
+    ]
   },
   {
     "version": "1.1.1",
     "name": "Release 1 - Patch 1",
     "date": "May 25, 2022",
-    "data": {
-      "bugfixes": [
+    "data": [
+      "Bug Fixes",
+      [
         "Fixed crash when attempting to add to superset at the end of a workout",
         "Fixed padding bug with StatDiffChips on the rep field"
       ]
-    }
+    ]
   },
   {
     "version": "1.1.0",
     "name": "Release 1",
     "date": "May 24, 2022",
-    "data": {
-      "preface": "We are live! (Well not really because this release was superseded before it ever got approved but still)",
-      "features": [
+    "data": [
+      "We are live! (Well not really because this release was superseded before it ever got approved but still)",
+      "Features",
+      [
         "Added creating, editing, and deleting routines",
         "Added filling out, submitting, and viewing workouts",
         "Added creating custom exercises",
-        "Given that this is the first release, it's somewhat barebones, but all of the internal code for many of the more advanced features is already in, so it should be relatively simple to add them later."
+        "Given that this is the first release, it's somewhat barebones, but all of the internal code for many of the more advanced Features is already in, so it should be relatively simple to add them later."
       ]
-    }
+    ]
   }
 ]

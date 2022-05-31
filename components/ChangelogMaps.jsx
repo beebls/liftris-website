@@ -5,12 +5,12 @@ export function ArrayMap({ arr }) {
   return arr.map((f, j) => {
     if (typeof f === "object") {
       return (
-        <ul className={ulstyle} key={`changelog_${Math.random()}`}>
+        <ul className={ulstyle} key={`changelog_nestContainer_${j}`}>
           <ArrayMap arr={f} />
         </ul>
       );
     } else {
-      return <li key={`changelog_${Math.random()}`}>{f}</li>;
+      return <li key={`changelog_${f}`}>{f}</li>;
     }
   });
 }
@@ -24,4 +24,22 @@ export function CategoryMap({ name, data }) {
       </ul>
     </li>
   );
+}
+
+export function RootMap({ data }) {
+  return data.map((f, j) => {
+    if (typeof f === "object") {
+      return (
+        <ul className={ulstyle} key={`changelog_nestContainer_${j}`}>
+          <ArrayMap arr={f} />
+        </ul>
+      );
+    } else {
+      return (
+        <li key={`changelog_${f}`} className={updateTypeContainerTitle}>
+          {f}
+        </li>
+      );
+    }
+  });
 }

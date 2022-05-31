@@ -4,7 +4,7 @@ import { useEffect } from "react";
 
 import changelog from "../../public/changelog.json";
 
-import { CategoryMap } from "../../components/ChangelogMaps";
+import { CategoryMap, RootMap } from "../../components/ChangelogMaps";
 
 export default function Changelog() {
   const updateNameStyle = "text-3xl font-semibold";
@@ -36,16 +36,7 @@ export default function Changelog() {
                     {e.version} - {e.name} - {e.date}
                   </span>
                   <ul className={ulstyle}>
-                    {e.data.preface ? <li>{e.data.preface}</li> : null}
-                    {e.data.features ? (
-                      <CategoryMap name='Features' data={e.data.features} />
-                    ) : null}
-                    {e.data.bugfixes ? (
-                      <CategoryMap name='Bug Fixes' data={e.data.bugfixes} />
-                    ) : null}
-                    {e.data.misc ? (
-                      <CategoryMap name='Misc' data={e.data.misc} />
-                    ) : null}
+                    <RootMap data={e.data} />
                   </ul>
                 </article>
               ))}

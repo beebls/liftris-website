@@ -3,7 +3,7 @@ import Link from "next/link";
 
 import changelog from "../../public/changelog.json";
 
-import { CategoryMap } from "../../components/ChangelogMaps";
+import { CategoryMap, RootMap } from "../../components/ChangelogMaps";
 
 const updatesWithPages = ["1.3.0"];
 
@@ -27,8 +27,6 @@ export default function Home() {
             </h2>
             {changelog.map((e) => {
               const isSpecial = updatesWithPages.find((f) => f === e.version);
-              console.log(isSpecial);
-
               return (
                 <article key={`changelog_${e.version}`}>
                   <Link href={`/changelog/${e.version}`}>
@@ -40,16 +38,7 @@ export default function Home() {
                     </a>
                   </Link>
                   <ul className={ulstyle}>
-                    {e.data.preface ? <li>{e.data.preface}</li> : null}
-                    {e.data.features ? (
-                      <CategoryMap name='Features' data={e.data.features} />
-                    ) : null}
-                    {e.data.bugfixes ? (
-                      <CategoryMap name='Bug Fixes' data={e.data.bugfixes} />
-                    ) : null}
-                    {e.data.misc ? (
-                      <CategoryMap name='Misc' data={e.data.misc} />
-                    ) : null}
+                    <RootMap data={e.data} />
                   </ul>
                 </article>
               );
