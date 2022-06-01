@@ -1,5 +1,29 @@
 [
   {
+    "version": "1.3.1",
+    "name": "Release 3 - Patch 1",
+    "date": "June 1, 2022",
+    "data": [
+      "Features",
+      [
+        "You can now set autofill all sets of an exercise at once.",
+        [
+          "Simply swipe on the name of an exercise to bring up a Multi-Set Reuse menu. It works exactly the same as for single sets, but it will autofill all sets of that exercise."
+        ]
+      ],
+      "Bug Fixes",
+      [
+        "Fixed the history page displaying all workouts as “0min long”",
+        "Fixed issue where turning a workout with supersets into a preset resulted in the supersets becoming “undefined”",
+        "Fixed visual bugs with the notes field not displaying multi-line notes."
+      ],
+      "Misc",
+      [
+        "Changed all references of “autofill” to “set reuse” to more accurately describe what it is."
+      ]
+    ]
+  },
+  {
     "version": "1.3.0",
     "name": "Release 3",
     "date": "Coming Soon",
