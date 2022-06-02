@@ -1,5 +1,20 @@
 [
   {
+    "version": "1.3.2",
+    "name": "Release 3 - Patch 2",
+    "date": "June 1, 2022",
+    "data": [
+      "This was simply a hotfix to patch up a huge error in the previous version.",
+      "Bug Fixes",
+      [
+        "The implementation of multi-set reuse caused the app to crash upon editing any superset 😅😅. Re-wrote the codebase for reuse to be much more stable.",
+        "Fixed bug where using quick start would create an infinite loading page.",
+        "Fixed visual bug with the 'No Routines' alert."
+      ],
+      "Very small update for today, but the next release is nearly ready for release and it brings some badly needed changes, can't wait to show it!"
+    ]
+  },
+  {
     "version": "1.3.1",
     "name": "Release 3 - Patch 1",
     "date": "June 1, 2022",
