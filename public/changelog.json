@@ -1,5 +1,24 @@
 [
   {
+    "version": "1.4.1",
+    "name": "Release 4 - Patch 1",
+    "date": "June 4, 2022",
+    "data": [
+      "Features",
+      [
+        "Even more performance optimizations!",
+        [
+          "Now in addition to the list of sets being optimized, each set's item is also memoized and will only render the specific part being changed."
+        ]
+      ],
+      "Bug Fixes",
+      [
+        "Fixed crash caused by the new optimizations involving set reuse.",
+        "Fixed the display of past workout targets so that they no longer get overwritten."
+      ]
+    ]
+  },
+  {
     "version": "1.4.0",
     "name": "Release 4",
     "date": "June 3, 2022",
