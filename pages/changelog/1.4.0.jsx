@@ -11,16 +11,16 @@ export default function Home() {
   return (
     <div className='h-full py-10 pb-5'>
       <Head>
-        <title>Liftris - Update 1.3.0</title>
+        <title>Liftris - Update 1.4.0</title>
       </Head>
       <main className='flex flex-col justify-center h-full w-full'>
         <div className='px-5'>
           <div className='text-zinc-400'>
             <h1 className='text-center text-6xl md:text-8xl font-bold pb-5 bg-clip-text bg-gradient-to-tl to-[#5ddeed] from-[#0e82c3] text-transparent'>
-              Update 1.3.0
+              Update 1.4.0
             </h1>
             <h2 className='text-center text-5xl md:text-7xl font-bold pb-5 bg-clip-text bg-gradient-to-tl from-slate-500 to-slate-300 text-transparent'>
-              Release 3 - May 31
+              Release 4 - June 3
             </h2>
             <div className='py-10'>
               <h3 className='text-center text-3xl md:text-5xl font-bold pb-5 bg-clip-text bg-gradient-to-tl from-sky-600 to-cyan-400 text-transparent'>
@@ -31,58 +31,39 @@ export default function Home() {
                   <article className='flex flex-col md:flex-row py-3'>
                     <div>
                       <h4 className={updateNameStyle + " text-emerald-500"}>
-                        Autofilling Workouts
+                        Performance
                       </h4>
                       <p>
-                        Do you have a set that was the exact same as last weeks?
-                        Maybe you like to remind yourself of the same thing
-                        every week in your notes.
+                        As Liftris has grown, the complexity of the app has
+                        grown, but the underlying code that renders it all has
+                        stayed the same. This changes today.
+                        <br />
+                        <br />A render is the act of your phone drawing out the
+                        app's visuals on the screen. Through the use of
+                        optimization techniques in React Native{" "}
+                        {"(the app framework Liftris is built on)"}, I have been
+                        able to reduce the amount of renders anywhere from 2-5x
+                        depending on the length and complexity of your workouts.
                         <br />
                         <br />
-                        If so, you no longer need to manually re-type these
-                        fields every workout. Simply swipe right on a set to
-                        bring the autofill menu up.
-                        <br />
-                        <br />
-                        If you already have a number written into a field, by
-                        default the autofill will skip over that field, but you
-                        can change this behaviour in settings to make it always
-                        write over your current data.
-                      </p>
-                    </div>
-                    <div className='w-72 self-center md:w-full'>
-                      <img src='/update1.3.0/autofill.gif' />
-                    </div>
-                  </article>
-                  <article className='flex flex-col md:flex-row py-3'>
-                    <div>
-                      <h4 className={updateNameStyle}>Quick Start</h4>
-                      <p>
-                        You can now jump straight into an empty workout from the
-                        home page without having to create any preset.
-                        <br />
-                        <br />
-                        This goes hand in hand with the next feature...
+                        For you, nothing will appear different, but your phone
+                        will be kissing the ground and thanking you for how much
+                        less work it is doing in the background.
                       </p>
                     </div>
                   </article>
                   <article className='flex flex-col py-3'>
                     <div>
-                      <h4 className={updateNameStyle}>
-                        Turn Workouts Into Presets
-                      </h4>
+                      <h4 className={updateNameStyle}>Color Picker Options</h4>
                       <p>
-                        After finishing any workout, you can now turn that exact
-                        routine into its own preset in one button.
-                        <br />
-                        <br />
-                        This allows you to re-use workouts much more easily. And
-                        combined with quick-starting empty workouts, you now
-                        have much more flexibility with how you log.
+                        You can now choose custom colors using a hex-code
+                        instead of the built-in color wheel. This means you can
+                        use any online color/theme generator to make colors for
+                        your Liftris theme.
                       </p>
                     </div>
                     <div className='w-72 mx-auto md:w-full flex justify-center'>
-                      <img src='/update1.3.0/quickstart.gif' />
+                      <img src='/update1.4.0/hexcolor.gif' />
                     </div>
                   </article>
                 </div>
@@ -93,7 +74,7 @@ export default function Home() {
                 Changelog
               </h3>
               {changelog
-                .filter((e) => e.version === "1.3.0")
+                .filter((e) => e.version === "1.4.0")
                 .map((e, i) => (
                   <article key={`changelog_${e.version}`}>
                     <span className={updateNameStyle}>

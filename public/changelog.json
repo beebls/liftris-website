@@ -1,5 +1,30 @@
 [
   {
+    "version": "1.4.0",
+    "name": "Release 4",
+    "date": "June 3, 2022",
+    "data": [
+      "Features",
+      [
+        "Your muscles are the only thing getting gains… Extreme performance gains coming too.",
+        [
+          "The old method of rendering the ongoing workout page meant that on every change (even something as small as writing 1 number) the entire page would be re-rendered.",
+          "Through caching and memoization of components, your device no longer re-renders the entire list, and only re-renders items when their own data has changed.",
+          "This should mean potentially 2-5x gains on performance depending on the length and complexity of your workouts."
+        ],
+        "Added input for choosing custom colors using hex codes.",
+        [
+          "This works with the built in color picker wheel, and you can choose either one."
+        ]
+      ],
+      "Bug Fixes",
+      [
+        "Fixed notes field not expanding downward when a note is barely longer than 1 line.",
+        "Fixed the history page displaying all workouts as “0min long” (Again… first fix didn't work ¯\\_(ツ)_/¯)"
+      ]
+    ]
+  },
+  {
     "version": "1.3.2",
     "name": "Release 3 - Patch 2",
     "date": "June 1, 2022",
@@ -41,7 +66,7 @@
   {
     "version": "1.3.0",
     "name": "Release 3",
-    "date": "Coming Soon",
+    "date": "May 31, 2022",
     "data": [
       "Features",
       [

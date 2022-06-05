@@ -3,9 +3,9 @@ import Link from "next/link";
 
 import changelog from "../../public/changelog.json";
 
-import { CategoryMap, RootMap } from "../../components/ChangelogMaps";
+import { RootMap } from "../../components/ChangelogMaps";
 
-const updatesWithPages = ["1.3.0"];
+const updatesWithPages = ["1.4.0", "1.3.0"];
 
 export default function Home() {
   const updateNameStyle = "text-3xl font-semibold";
