@@ -1,5 +1,30 @@
 [
   {
+    "version": "1.4.2",
+    "name": "Release 4 - Patch 2",
+    "date": "June 8, 2022",
+    "data": [
+      "Another release is in the works with a new major feature, but to hold you over until then, I've squashed some bugs and made some minor changes.",
+      [
+        "Added past target data for sliders.",
+        [
+          "This will retroactively work for the past target values of your current exercises"
+        ]
+      ],
+      "Bug Fixes",
+      [
+        "Fixed crash when clicking 'Delete Superset' button on the last exercise in your workout.",
+        "Fixed bug where note field would unselect after writing the first character.",
+        "Fixed past workout exercise stats not displaying."
+      ],
+      "Misc",
+      [
+        "Target data for sliders now displays in the same way as other target data.",
+        "Optimized target-fetching code, will no longer run more times than neccessary."
+      ]
+    ]
+  },
+  {
     "version": "1.4.1",
     "name": "Release 4 - Patch 1",
     "date": "June 4, 2022",
