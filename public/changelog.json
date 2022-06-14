@@ -1,5 +1,38 @@
 [
   {
+    "version": "1.5.0",
+    "name": "Release 5",
+    "date": "June 15, 2022",
+    "data": [
+      "Features",
+      [
+        "Schedules:",
+        [
+          "You can now set a workout schedule.",
+          "A schedule is an ordered list of routines that you do often in that order.",
+          "There is a prompt on the homepage to quickly launch into the currently planned routine.",
+          "Upon completing one exercise in the schedule, it will automatically move forward to the next routine."
+        ],
+        "'Erase Notes' setting to delete the previous note value of a set when you add new data into the set.",
+        [
+          "This saves visual space if you regularly leave long notes, but is disabled by default."
+        ],
+        "Long notes now flow downward into their own line instead of being cramped into their small container."
+      ],
+      "Bug Fixes",
+      [
+        "Long notes flowing into new lines has fixed multiple bugs.",
+        [
+          "Weight input no longer gets cutoff when a note is too long.",
+          "Slider icon will no longer push weight input down into a new line."
+        ],
+        "Going from no sliders to any number of sliders now correctly displays the difference indicator."
+      ],
+      "Misc",
+      ["Reuse has been renamed to Autofill"]
+    ]
+  },
+  {
     "version": "1.4.3",
     "name": "Release 4 - Patch 3",
     "date": "June 9, 2022",

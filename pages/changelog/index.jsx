@@ -5,7 +5,7 @@ import changelog from "../../public/changelog.json";
 
 import { RootMap } from "../../components/ChangelogMaps";
 
-const updatesWithPages = ["1.4.0", "1.3.0"];
+const updatesWithPages = ["1.5.0", "1.4.0", "1.3.0"];
 
 export default function Home() {
   const updateNameStyle = "text-3xl font-semibold";
