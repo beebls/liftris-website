@@ -1,5 +1,27 @@
 [
   {
+    "version": "1.5.1",
+    "name": "Release 5 - Patch 1",
+    "date": "June 16, 2022",
+    "data": [
+      "With this release, I've now patched the last known crash in the app, which means that for the first time since launch, the app appears to be stable.",
+      "Bug Fixes",
+      [
+        "Fixed crash when re-ordering supersets in a workout.",
+        "Renaming a routine now properly changes its name in your schedule.",
+        "Fixed the color picker wheel swiping shut when attempting to use it.",
+        "Very long routine names no longer break the schedule button."
+      ],
+      "Misc",
+      [
+        "The set-number of a set now stretches for multi-line sets.",
+        "Adjusted the appearance of help text for settings to make them clearer.",
+        "Rewrote some app dialogue to make it more self-explanatory.",
+        "Lots of typo fixes."
+      ]
+    ]
+  },
+  {
     "version": "1.5.0",
     "name": "Release 5",
     "date": "June 15, 2022",
