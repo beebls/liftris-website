@@ -2,11 +2,10 @@ import Head from "next/head";
 
 import changelog from "../../public/changelog.json";
 
-import { RootMap } from "../../components/ChangelogMaps";
+import ChangelogRoot from "../../components/ChangelogRoot";
 
 export default function Home() {
   const updateNameStyle = "text-3xl font-semibold";
-  const ulstyle = "list-disc pl-10";
 
   return (
     <div className='h-full py-10 pb-5'>
@@ -94,15 +93,8 @@ export default function Home() {
               </h3>
               {changelog
                 .filter((e) => e.version === "1.3.0")
-                .map((e, i) => (
-                  <article key={`changelog_${e.version}`}>
-                    <span className={updateNameStyle}>
-                      {e.version} - {e.name} - {e.date}
-                    </span>
-                    <ul className={ulstyle}>
-                      <RootMap data={e.data} />
-                    </ul>
-                  </article>
+                .map((e) => (
+                  <ChangelogRoot data={e} />
                 ))}
             </div>
           </div>

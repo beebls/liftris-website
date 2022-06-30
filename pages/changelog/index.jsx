@@ -3,14 +3,9 @@ import Link from "next/link";
 
 import changelog from "../../public/changelog.json";
 
-import { RootMap } from "../../components/ChangelogMaps";
+import ChangelogRoot from "../../components/ChangelogRoot";
 
-const updatesWithPages = ["1.5.0", "1.4.0", "1.3.0"];
-
-export default function Home() {
-  const updateNameStyle = "text-3xl font-semibold";
-  const ulstyle = "list-disc pl-10";
-
+export default function Changelog() {
   return (
     <div className='h-full py-10 pb-5'>
       <Head>
@@ -25,24 +20,9 @@ export default function Home() {
             <h2 className='text-center text-2xl md:text-4xl font-medium pb-5 bg-clip-text bg-gradient-to-tl from-slate-500 to-slate-300 text-transparent'>
               Click on underlined entries for additional info
             </h2>
-            {changelog.map((e) => {
-              const isSpecial = updatesWithPages.find((f) => f === e.version);
-              return (
-                <article key={`changelog_${e.version}`}>
-                  <Link href={`/changelog/${e.version}`}>
-                    <a
-                      className={`${updateNameStyle} ${
-                        isSpecial ? "underline" : ""
-                      }`}>
-                      {e.version} - {e.name} - {e.date}
-                    </a>
-                  </Link>
-                  <ul className={ulstyle}>
-                    <RootMap data={e.data} />
-                  </ul>
-                </article>
-              );
-            })}
+            {changelog.map((e) => (
+              <ChangelogRoot data={e} />
+            ))}
           </div>
         </div>
       </main>

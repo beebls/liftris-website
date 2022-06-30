@@ -1,5 +1,87 @@
 [
   {
+    "version": "1.7.0",
+    "name": "Release 7",
+    "date": "June 30, 2022",
+    "hasCustomPage": true,
+    "data": [
+      "We're back with the biggest update to Liftris since launch!",
+      "Features",
+      [
+        "Previous workouts are now editable.",
+        [
+          "Click on any workout in the history tab to open up it's view, then press the 'Edit' button to enter an editing menu.",
+          "Upon clicking save, the corresponding entries in your exercise stats will also be updated*.",
+          "*Due to lack of data, only exercise data entries created after the date of the update will be automatically updated."
+        ],
+        "Deleting a workout from history now also deletes the corresponding entries in your exercise stats.",
+        [
+          "Once again, only works automatically on workouts created after the date of the update."
+        ],
+        "Upon ending a workout, any collapsed exercises will be un-collapsed for the history entry of that workout.",
+        [
+          "You can change the behaviour of this with the 'Stop Uncollapsing Exercises' switch in Settings."
+        ]
+      ],
+      "Bug Fixes",
+      [
+        "Fixed crash when adding or changing an exercise mid-workout.",
+        "Fixed crash when attempting to change the current schedule day.",
+        "Schedule auto-advancing now works correctly again, this was broken in the last update.",
+        "Fixed text-clipping in the tutorial screen on 6.7\" iPhones.",
+        "Image scaling on the tutorial screen now better changes with the device size/aspect ratio."
+      ],
+      "Misc",
+      [
+        "Added 'Advanced Settings' tab in the Settings menu.",
+        [
+          "This is for the settings that most people won't want to mess with, but that I am leaving accessible due to my desire for Liftris to be the most customizable workout app."
+        ],
+        "Renamed 'Highlight Color' to 'Secondary Color' in custom themes.",
+        "Optimized the settings page further.",
+        ["Now only uses ~50% as much code."],
+        "Various typo/grammar corrections."
+      ]
+    ]
+  },
+  {
+    "version": "1.6.1",
+    "name": "Release 6 - Hotfix",
+    "date": "June 24, 2022",
+    "data": [
+      "The initial version of Release 6 had an internal conflict that wouldn't allow it to be published, this is a hotfix for that."
+    ]
+  },
+  {
+    "version": "1.6.0",
+    "name": "Release 6",
+    "date": "June 24, 2022",
+    "data": [
+      "Happy 1 month birthday to Liftris!",
+      "Features",
+      [
+        "Added tutorial/onboarding screen.",
+        [
+          "This will hopefully 'de-mystify' the app for some less advanced users and expand the userbase."
+        ]
+      ],
+      "Bug Fixes",
+      [
+        "Fixed crash when having schedule enabled but empty.",
+        "'Total Weight Moved' Display now properly counts weight for each rep.",
+        "Reduced flickering on long, multi-line notes",
+        [
+          "It still isn't perfect, but it is a limitation with React Native and there isn't much I can do about it."
+        ]
+      ],
+      "Misc",
+      [
+        "Settings menu moved to the bottom of the swipeout menu.",
+        "The backend code for the settings page has been rewritten, making it much more efficient."
+      ]
+    ]
+  },
+  {
     "version": "1.5.1",
     "name": "Release 5 - Patch 1",
     "date": "June 16, 2022",
@@ -25,6 +107,7 @@
     "version": "1.5.0",
     "name": "Release 5",
     "date": "June 15, 2022",
+    "hasCustomPage": true,
     "data": [
       "Features",
       [
@@ -110,6 +193,7 @@
     "version": "1.4.0",
     "name": "Release 4",
     "date": "June 3, 2022",
+    "hasCustomPage": true,
     "data": [
       "Features",
       [
@@ -174,6 +258,7 @@
     "version": "1.3.0",
     "name": "Release 3",
     "date": "May 31, 2022",
+    "hasCustomPage": true,
     "data": [
       "Features",
       [
