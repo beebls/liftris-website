@@ -1,10 +1,9 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
-import { useEffect } from "react";
 
 import changelog from "../../public/changelog.json";
 
-import { CategoryMap, RootMap } from "../../components/ChangelogMaps";
+import { RootMap } from "../../components/ChangelogMaps";
 
 export default function Changelog() {
   const updateNameStyle = "text-3xl font-semibold";
