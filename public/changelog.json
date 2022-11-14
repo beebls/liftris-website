@@ -1,5 +1,25 @@
 [
   {
+    "version": "1.8.0",
+    "name": "Release 8",
+    "date": "November 14, 2022",
+    "hasCustomPage": false,
+    "data": [
+      "Very small update here, but this is paving the way for a large re-write that I'm starting work on.",
+      "Bug Fixes",
+      [
+        "Clicking up/down while at either end of your schedule will now wrap around to the other end.",
+        "Fixed weight fields on sets with sliders having very small hitboxes."
+      ],
+      "Misc",
+      [
+        "Reordered some menus for consistency.",
+        "Liftris now runs on React Native 0.69.5 (nice) and React 18.",
+        "Small parts of the app are now written in TypeScript, and this number will grow in the future."
+      ]
+    ]
+  },
+  {
     "version": "1.7.0",
     "name": "Release 7",
     "date": "June 30, 2022",
