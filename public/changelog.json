@@ -1,5 +1,18 @@
 [
   {
+    "version": "1.8.1",
+    "name": "Release 8 - Patch 1",
+    "date": "November 15, 2022",
+    "hasCustomPage": false,
+    "data": [
+      "Bug Fixes",
+      [
+        "Fixed menus having actions that didn't match the text they display.",
+        "Fixed an issue where workout targets would be incorrectly placed when a slider was present."
+      ]
+    ]
+  },
+  {
     "version": "1.8.0",
     "name": "Release 8",
     "date": "November 14, 2022",
