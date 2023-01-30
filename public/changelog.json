@@ -1,5 +1,40 @@
 [
   {
+    "version": "1.8.4",
+    "name": "Release 8 - Patch 4",
+    "date": "January 30, 2023",
+    "hasCustomPage": false,
+    "data": [
+      "Hotfix",
+      ["This update was a hotfix for an issue created by the previous update."]
+    ]
+  },
+  {
+    "version": "1.8.3",
+    "name": "Release 8 - Patch 3",
+    "date": "January 29, 2023",
+    "hasCustomPage": false,
+    "data": [
+      "Bug Fixes",
+      [
+        "Rewrote how targets are handled.",
+        [
+          "This fixes a long-standing bug where targets were not taken from the most recent workout."
+        ]
+      ]
+    ]
+  },
+  {
+    "version": "1.8.2",
+    "name": "Release 8 - Patch 2",
+    "date": "January 1, 2023",
+    "hasCustomPage": false,
+    "data": [
+      "Bug Fixes",
+      ["Fixed some dates displaying as 1 month later than they were."]
+    ]
+  },
+  {
     "version": "1.8.1",
     "name": "Release 8 - Patch 1",
     "date": "November 15, 2022",
